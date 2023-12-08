@@ -28,6 +28,7 @@ body {
 
 .red {
     background-color: rgba(254, 82, 82);
+    
 }
 
 .calbuton {
@@ -43,6 +44,7 @@ body {
     margin: 20px 0px;
     border-radius: 10px;
     
+    
 }
 
 .c {
@@ -55,4 +57,8 @@ body {
 
 .buttondiv {
     text-align: center;
+}
+
+.calbuton:hover {
+    border: 2px solid cornflowerblue;
 }
