@@ -27,7 +27,7 @@ function updateNumber(number) {
         
     }
     
-
+  
     
 }
 
@@ -98,28 +98,24 @@ function mutiplication(number1, number2) {
 //Divide function 
 function divide(number1, number2) {
 
-
+    if(parseFloat(number2) === 0.0 || parseInt(number2) === 0) {
+        return "ERROR"; //Will return error if number is divided by zero
+    }
 
     if(number1.includes(".") || number2.includes(".")) { //Checks to make sure the number is a decimal 
         let decimal1 = parseFloat(number1);
         let decimal2 = parseFloat(number2);
 
 
-        return decimal2 !== 0 ? decimal1 / decimal2 : "ERROR";
-        // return decimal1 / decimal2;
+        return decimal1 / decimal2;
+       
     } else { //if number is not a deccimal will run reqular code
-        if(number2 !== 0) { //Check to make sure number cant be divided by zero
-            let result = number1 / number2;
+        //Check to make sure number cant be divided by zero
+            let result = parseInt(number1) / parseInt(number2);
             console.log("N1 " + number1)
             console.log("N2 " + number2)
             console.log("Result " + result);
             return result;
-            
-        } else {
-    //Will return error if number is divided by zero
-    return "ERROR";
-        }
-    
     
     }
     
